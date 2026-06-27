@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UAV Detection AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <img src="{{ url_for('static', filename='img/drone-logo.png') }}" alt="Logo">
+
+        <span>UAV <b>AI</b></span>
+
+    </div>
+
+    <ul>
+
+        <li><a class="active">Deteksi</a></li>
+
+        <li><a>Tentang</a></li>
+
+    </ul>
+
+</nav>
+
+
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <h1>UAV Detection <span>AI</span></h1>
+
+        <p>
+
+            Sistem deteksi UAV berbasis Artificial Intelligence menggunakan
+            Convolutional Neural Network (CNN).
+
+        </p>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="{{ url_for('static', filename='img/drone.png') }}">
+
+    </div>
+
+</section>
+
+
+
+
+<section class="main-card">
+
+
+
+<div class="upload-card">
+
+<h2>
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+Upload Gambar
+
+</h2>
+
+<div class="drop-area" id="drop-area">
+
+    <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        hidden>
+
+    <i class="fa-regular fa-image"></i>
+
+    <h3>Drag & Drop</h3>
+
+    <p>atau klik untuk memilih gambar</p>
+
+    <button
+        type="button"
+        id="chooseBtn">
+
+        Pilih Gambar
+
+    </button>
+
+</div>
+</div>
+
+
+
+
+
+<div class="result-card">
+
+<h2>
+
+<i class="fa-solid fa-crosshairs"></i>
+
+Hasil Deteksi
+
+</h2>
+
+<div class="result-body">
+
+<div class="preview">
+
+<img id="previewImage">
+
+</div>
+
+<div class="information">
+
+<div class="item">
+
+<span>Status</span>
+
+<strong id="status">
+
+-
+
+</strong>
+
+</div>
+
+<div class="item">
+
+<span>Confidence</span>
+
+<strong id="confidence">
+
+-
+
+</strong>
+
+</div>
+
+<div class="item">
+
+<span>Estimasi Jarak</span>
+
+<strong id="distance">
+
+-
+
+</strong>
+
+</div>
+
+<div class="item">
+
+<span>Model</span>
+
+<strong>
+
+CNN MobileNetV2
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="about">
+
+<h3>
+
+Tentang Sistem
+
+</h3>
+
+<p>
+
+Website ini digunakan untuk mendeteksi objek UAV menggunakan model Deep Learning berbasis CNN.
+Pengguna cukup mengunggah gambar kemudian sistem akan melakukan prediksi secara otomatis dan
+menampilkan hasil deteksi beserta nilai confidence.
+
+</p>
+
+</section>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

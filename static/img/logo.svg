@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" width="160" height="48">
+  <rect width="160" height="48" rx="8" fill="#0d2355"/>
+  <text x="14" y="32" font-family="Arial,sans-serif" font-size="22" font-weight="800" fill="white" letter-spacing="-0.5">UAV</text>
+  <text x="66" y="32" font-family="Arial,sans-serif" font-size="22" font-weight="400" fill="#93b8fb" letter-spacing="-0.5"> AI</text>
+  <circle cx="140" cy="24" r="10" fill="none" stroke="#1565e0" stroke-width="2"/>
+  <circle cx="140" cy="24" r="4" fill="#1565e0"/>
+  <line x1="140" y1="10" x2="140" y2="14" stroke="#1565e0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="140" y1="34" x2="140" y2="38" stroke="#1565e0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="126" y1="24" x2="130" y2="24" stroke="#1565e0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="150" y1="24" x2="154" y2="24" stroke="#1565e0" stroke-width="2" stroke-linecap="round"/>
+</svg>
