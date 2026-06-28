@@ -29,8 +29,8 @@ app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
 # =====================================================
 
 predictor = UAVPredictor(
-    classify_model_path="model/model_klasifikasi.keras",
-    regress_model_path="model/model_regresi.keras"
+    classify_model_path="model/model_klasifikasi.h5",
+    regress_model_path="model/model_regresi.h5"
 )
 
 # =====================================================
